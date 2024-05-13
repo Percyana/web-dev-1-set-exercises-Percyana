@@ -1,0 +1,101 @@
+/*General styles for the body element of a webpage.
+-The text color is set to green.
+-The bakground img is set to photo.jpg , which is fixed  in position, background size is set to cover the entire viewport, and will not repeat.
+-the height of the body is set 100vh, filling the entire viewport.
+-The padding and margins are set to 0.
+the box-sizing property is set to border-box, which includes padding and border within the element's withon and height*/
+body{
+    color:white;
+    text-shadow: 2px 2px 4px rgb(5, 4, 4);
+    background-image: url("Pictures/orange\ cake.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat:no-repeat ;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+    
+}
+/*Enable smooth scrolling for html*/
+
+/*Set text color to orangered*/
+h1,h2,h3{
+    
+    color: orangered;
+    text-shadow: 2px 2px 8px black;
+    font-weight: normal;
+    margin: 1.5rem 0;
+    font-size: 2.5rem;
+}
+/*set font size to 1.2rem*/
+.p1,.p2,.p3{
+    font-size: 1.2rem;
+    /*Add bottom margin of 20px, center the text*/
+    margin-bottom:20px ;
+    text-align: center;
+}
+/*center align the text*/
+.p2,.p3{
+    text-align: center;
+    /*Increase font size*/
+    font-size: 1.2rem;
+    /*Add bottom margin*/
+    margin-bottom: 20px;
+    /*Adjust line height*/
+    line-height: 1.5;
+    /*set font weight to normal*/
+    font-weight: normal;
+}
+table{
+    background-color: gray;
+    color: white;
+    width: 100%;/*make the table*/
+    border-collapse: collapse;/*collpse table borders into a single border*/
+    margin-bottom: 20px; /*we add margin at the bottom of the table*/
+}
+th{
+    background-color: orangered;/*set backgound color for  table header*/
+    color: white;/*set text color for table header cells*/
+    padding:10px ;/*Add padding to taable header cells*/
+}
+td{ border: 1px solid black; /*Add border to tables data cells*/
+    padding: 10px; /*we add padding to table cells data cellss*/
+    text-align: center; /*center align text in table data cells*/}
+    tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+/*Add padding to left of ordered  and unorderedlists*/
+ol{
+    padding-left: 20px;
+}
+/*code styles*/
+code{
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    white-space: pre-wrap;
+    background-color: gray;
+}
+/*Display the code block*/
+pre{
+    display: block;
+    /*Add padding to  the code block, beige*/
+    padding: 10px;
+    /*set baground color to beige*/
+    background-color: beige;
+    /*Add margin to the bbottom of the code block*/
+    margin-bottom: 20px;
+    /*Allow line  wrapping for long lines*/
+    white-space:pre-wrap;
+    /*Add a border to the code block*/
+    border:1px solid;
+    /*Incude padding and border in the element's total width and height*/
+    box-sizing: border-box;
+    /*set font to monospace*/
+    font-family: monospace;
+    /*Add scrollbars if the content overflows*/
+    overflow: auto;
+}
