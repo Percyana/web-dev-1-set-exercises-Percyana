@@ -1,0 +1,67 @@
+/*here we are set box-sizing to border box , resertting margin and padding   for all element*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* we are set font, display flex ,column diretion, and center aligned f*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*Add padding to body*/
+    padding: 20px;
+    /*set background color to gray*/
+    background-color: gray;
+}
+/*margin botton for h1*/
+h1{
+    margin-bottom: 20px;
+    /*change text color on hover*/
+    transition: color 0.5s;
+}
+/*change text color on hover*/
+h1:hover{
+    color: blue;
+}
+/* we are define the class .img-gallery*/
+.img-gallery{
+    /*Display the items in a flex container*/
+    display: flex;
+    /*justify the content with space around*/
+    justify-content: space-around;
+    /*align the items in center*/
+    align-items: center;
+    /*add margin to the top*/
+    margin-top: 20px;
+}
+/*center-align the image container*/
+.img-container{
+    text-align: center;
+    /*add bottom margin to the image container*/
+    margin-bottom: 20px;
+    /*change the border color on hover*/
+    transition: border-color 0.5s;
+}
+/*set maximun width and height for images in container*/
+.img-container img{
+    max-width: 100%;
+    max-height: 300%;
+    /*transition effect for transform property*/
+    transition: transform 0.5s;
+}
+/*Add transition effect for transform property*/
+.img-container:hover img{
+    /* we add 360 degree rotation to the img*/
+    transform: rotate(360deg);
+}
+/*change border color on hover*/
+.img-container:hover{
+    border-color:rgb(255, 0, 187);
+}
+/*font size for the image information*/
+.img-info{
+    font-size: 15px;
+    margin-top: 10px;
+}

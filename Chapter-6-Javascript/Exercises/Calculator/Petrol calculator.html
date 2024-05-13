@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrol Calculator</title> <!--title of the webpage-->
+    <link rel="stylesheet" href="Petrol calculator.css"> <!--css external link-->
+</head>
+<body>
+    <!--main contet of webpage -->
+    <!--heading-->
+    <h1>Petrol Calculator</h1>
+    <form>
+        <label for="petrol-cost">Cost per liter:</label> <!--Label for cost per liter input field-->
+        <input type="number" id="petrol-cost" name="petrol-cost" value="1.72" step="0.01"> <!--Input field for cost input field-->
+        <label for="liters-purchased">Liters purchased:</label> <!--Label for liters purchased input field-->
+        <input type="number" id="liters-purchased" name="liters-purchased" value="0"> <!--Input field for per liter-->
+        <button type="button" id="calculate-button">Calculate</button> <!--Button to tigger calculation-->
+    </form>
+    <p id="total-cost"></p> <!--placeholder to display the calculated total cost-->
+    <script src="Petrol calculator.js"></script> <!--linking to an external javascript file-->
+</body>
+</html>

@@ -1,0 +1,90 @@
+body {
+    /*set background color*/
+    background-color: #232323;
+    /*resert margin*/
+    margin: 0;
+    /*set font Avenir*/
+    font-family: "Avenir";
+}
+/*define the class named 'square'*/
+.square {
+    /*set background color and set width to 30%*/
+    width: 30%;
+    background-color: purple;
+    padding-bottom: 30%;
+    /*use float to align elemnts side by side*/
+    float: left;
+    /*add margin for spacing*/
+    margin: 1.66%;
+    border-radius: 15%;
+    /*Add transitioncfor background color change*/
+    transition: background 0.6s;
+}
+/*container for main content*/
+#container {
+    max-width: 600px; /*maximun width of the container*/
+    margin: 20px auto; /*Margin top and bottom, center horizontally*/
+}
+/*headervtext color*/
+h1{
+    color: white;
+    /*align center to center*/
+    text-align: center;
+    /*background color*/
+    background-color: steelblue;
+    /*remove margin*/
+    margin: 0;
+    /*set font weight to normal*/
+    font-weight: normal;
+    /*transform text to uppercase*/
+    text-transform: uppercase;
+    /*set line height*/
+    line-height: 1.1;
+    /*add padding*/
+    padding: 20px 0;
+}
+/*set background color , height, text align and color*/
+#stripe {
+    background-color: white;/*set background color to white*/
+    height: 30px;/*set height to 30px*/
+    text-align: center; /*center text alignment*/
+    color: black; /*set text color to black*/
+}
+/*style for selected class*/
+.selected {
+    color: white; /*Text color*/
+    background-color: steelblue; /*background color*/
+}
+/*set font size to 200% for element width id 'colordisplay'*/
+#colorDisplay {
+    font-size: 200%;
+}
+
+button {
+    /*no border or background for the button*/
+    border: none;
+    background: none;
+    /*text is uppercase and bold */
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    /*space between letters and add text color steelblue*/
+    color: steelblue;
+    letter-spacing: 1px;
+    /*inherit font size from parent*/
+    font-size: inherit;
+    /*transitio for all properties*/
+    transition: all 0.3s;
+    /*remove outiline on focus*/
+    outline: none;
+}
+/*set display property to inline-block to allow the message to be displayed next to other elements*/
+#message {
+    /*set the width of the message to 20% of its parent container*/
+    width: 20%;
+}
+/*change style when button is hover */
+button:hover {
+    color: white; /*set text color to white*/
+    background-color: steelblue;  /*set the background*/
+}
